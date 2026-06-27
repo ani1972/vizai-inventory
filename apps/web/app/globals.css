@@ -1,0 +1,8 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+:root { --font-mono: 'JetBrains Mono', 'Courier New', monospace; }
+* { box-sizing: border-box; }
+::-webkit-scrollbar { width: 4px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: #2A2F3A; border-radius: 2px; }

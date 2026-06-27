@@ -1,0 +1,18 @@
+{
+  "name": "vizai-inventory",
+  "private": true,
+  "scripts": {
+    "dev":         "cd apps/web && npm run dev",
+    "dev:all":     "concurrently --kill-others-on-fail -n \"web,inv,ord,sup,alr\" -c \"cyan,green,yellow,blue,magenta\" \"cd apps/web && npm run dev\" \"cd apps/mcp-inventory && npx wrangler dev --port 8787\" \"cd apps/mcp-orders && npx wrangler dev --port 8788\" \"cd apps/mcp-supplier && npx wrangler dev --port 8789\" \"cd apps/mcp-alerts && npx wrangler dev --port 8790\"",
+    "build":       "cd apps/web && npm run build",
+    "type-check":  "cd apps/web && npm run type-check",
+    "db:migrate":  "npx supabase db push",
+    "db:seed":     "npx tsx infra/supabase/seed/index.ts",
+    "deploy:web":  "cd apps/web && npx vercel --prod"
+  },
+  "devDependencies": {
+    "typescript":   "^5.4.0",
+    "tsx":          "^4.7.0",
+    "concurrently": "^8.2.0"
+  }
+}

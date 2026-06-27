@@ -1,0 +1,15 @@
+# apps/mcp-inventory/wrangler.toml
+name            = "vizai-mcp-inventory"
+main            = "src/index.ts"
+compatibility_date = "2024-06-01"
+
+[vars]
+SUPABASE_URL = ""
+
+[[kv_namespaces]]
+binding  = "ITEM_CACHE"
+id       = "REPLACE_WITH_KV_ID"
+
+[[kv_namespaces]]
+binding  = "ZOHO_TOKEN_CACHE"
+id       = "REPLACE_WITH_KV_ID_2"

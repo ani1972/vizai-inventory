@@ -1,0 +1,16 @@
+{
+  "name":             "VizAI Inventory",
+  "short_name":       "VizAI",
+  "description":      "Agentic inventory management for VizAI Engineering",
+  "start_url":        "/dashboard",
+  "display":          "standalone",
+  "background_color": "#0D0F12",
+  "theme_color":      "#0D0F12",
+  "orientation":      "portrait-primary",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "maskable any" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "maskable any" }
+  ],
+  "categories": ["business", "productivity"],
+  "lang": "en-IN"
+}
